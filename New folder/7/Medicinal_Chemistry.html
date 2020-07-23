@@ -1,0 +1,439 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Medicinal Chemistry</title>
+	<meta name='Generator' content='Zim 0.73.1'>
+	<style type='text/css'>
+		a          { text-decoration: none      }
+		a:hover    { text-decoration: underline }
+		a:active   { text-decoration: underline }
+		strike     { color: grey                }
+		u          { text-decoration: none;
+					 background-color: yellow   }
+		tt         { color: #2e3436;            }
+		pre        { color: #2e3436;
+					 margin-left: 20px          }
+		h1         { text-decoration: underline;
+					 color: #4e9a06; margin-bottom: 0 }
+		h2         { color: #4e9a06; margin-bottom: 0 }
+		h3         { color: #4e9a06; margin-bottom: 0 }
+		h4         { color: #4e9a06; margin-bottom: 0 }
+		h5         { color: #4e9a06; margin-bottom: 0 }
+		p          { margin-top: 0              }
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		.migrated-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB+AKHREFA8vJSnkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAC1klEQVRIx+2VT0hUURTGf/e958w4Tc3TYowMw1GyEgwr1MqsFmbZIrIWQZsWJUjbdoHQpl3Qps0swnCRECQFYkR/TC1iKkqmfzAKTo2Vf8hoRsfR995tkRMT87RRWkUHHhy495zvnvvu933wP/75EKkkEAjIYDCIaZpIKRFCZN0kfX9xcTGtra2/irVUEolECIfDlJeXo+s6hmFkDaCqKoZhEAqFSCaTv60pqcSyLAoLC/F4PEtqDmCaJkIIKisrMybX0sdUVRWA5ubmPzdNjjI1cpXkZC/O1fV03PXgdDqRUtpPIITAsqxsDz0Z/3CZQv8uqo4N4C8/Tp2/DdM0MiZQlvk41OTkI/LW1SGtCVb5drD3eCc71wcA+VcAHA5vDd8+3UGakxiJV7i9pdQevU5T1R35pJ3MV5QW1pf+0kWBheJ2SWua8EQXZXsu4fVVYEz1sEKvof5EuxjoPvzpcRvrdp9C2gGMx6cpOHBmbImMesds7BZubwMVDTfXDnQ3vQfK7AC8wLfExMX5whyQc3q2OEnjGm5vE76SQxsfBLr77a7CNf+n0r/l6sSMtsBSnurckiIILCobAtVZhpF4gZF4jubaymj4Ch/fd380LE7bAnjc0NPxk2yqpmEuwGxF0ag+0k5uTpzZeBeaazvj0We8fXojainsb2xh2BZgbe0gSIllzSIUh63wfQ6dZ/O2fbjcKlOj58jJ3cVENESw5yErc9nf2MLQ4jwQAkV1Lqiq37/cZ9WaahJjF9AcmxiPDhLs7ePe23oOnmUwg2hSShQle96tKDjA2HAniusgo9FxnvY9Jxw7RWzGYy92QghM00x5g53qp9sHmtB58/o2umOI2NwGolMnMYUHIb7aAyiKwsjICLqu2/qBEIKUUAohMaSHSLyBSMoPTINQ6CX5+fn2AEVFRZSUlBCPx4nFYhl3L4RESjF/GEgX3pSj+Xw+/H7/b3U/AEOZFnp7O5+5AAAAAElFTkSuQmCC)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='..\7.html'>Prev</a> ]
+
+	[ <span class='insen'>Index</span> ]
+
+	[ <a href='./Pharmacognosy.html'>Next</a> ]
+</div>
+
+<hr />
+
+<!-- Wiki content -->
+
+<div class='pages'>
+	<div class='heading'>
+	<h1>Medicinal Chemistry <a name='7:Medicinal Chemistry'></a></h1>
+	</div>
+
+	<div class='content'>
+	<p>
+→  name “lactam” is given to cyclic amides and is analogous to the name “lactone,” which is given to cyclic esters.
+</p>
+
+<p>
+→ β-lactam is a cyclic amide with four atoms in the ring (azetidinone)<br>
+<img src="./Medicinal_Chemistry/pasted_image.png"><br>
+→ Penicillin  characterized by the presence of a substitued 5-membered thiazolidine ring fused to the b-lactam ring
+</p>
+
+<h1>PENICILLIN</h1>
+
+<p>
+→ → 6-APA(6-aminopenicillanic acid ) has only very weak antibiotic activity, but when substituted on its primary amino group with a suitable amide side chain, its potency and antibacterial spectrum are profoundly enhanced
+</p>
+
+<p>
+→ → The most unstable bond in the penicillin molecule is the highly strained and reactive β-lactam amide bond<br>
+<ul>
+<li>bond cleaves moderatly slowly in water but increase rapidply in alkaline solutions to produce penicilloic acid which readly decarboxylated to produce penilloic acid</li>
+<li>hydrolysis deactivates the antibiotic</li>
+</ul>
+</p>
+
+<p>
+→ The original fermentation derived penicillins were produced by growth of the fungus Penicillium chrysogenum on complex solid media<br>
+<ul>
+<li>supply of phenylacetic acid → incorporated into the molecule to produce mainly benzylpenicillin (penicillin G in </li>
+<li>of phenoxyacetic acid instead leads to phenoxymethyl penicillin (penicillin V). </li>
+</ul>
+</p>
+
+<p>
+<img src="./Medicinal_Chemistry/pasted_image001.png">
+</p>
+
+<h2>SAR</h2>
+
+<p>
+→  The original fermentation derived penicillins were produced by growth of the fungus Penicillium chrysogenum on complex solid media<br>
+<ul>
+<li>supply of phenylacetic acid → incorporated into the molecule to produce mainly benzylpenicillin (penicillin G in </li>
+<li>of phenoxyacetic acid instead leads to phenoxymethyl penicillin (penicillin V). </li>
+</ul>
+</p>
+
+<br>
+
+<p>
+<img src="./Medicinal_Chemistry/pasted_image002.png"><br>
+→  The substitution of a side-chain R group on the primary amine with an electron-withdrawing group decreases the electron density on the side-chain carbonyl and protects these penicillins, in part, from acid degradation<br>
+<img src="./Medicinal_Chemistry/pasted_image005.png">
+</p>
+
+<p>
+→ The more lipophilic the side chain of a penicillin, the more serum protein bound is the antibiotic<br>
+<ul>
+<li>This has some advantages in terms of protection from degradation, but it does reduce measurably the effective bactericidal concentration of the drug in whole blood</li>
+</ul>
+</p>
+
+<br>
+
+<p>
+<img src="./Medicinal_Chemistry/pasted_image004.png">
+</p>
+
+<h2>PENICILLINASE-RESISTANT PARENTERAL PENICILLINS</h2>
+
+<p>
+→ Using an isoxazolyl ring as a bio-isosteric replacement for the benzene ring and a methyl on one flank and a substituted benzene ring on the other in place of the methoxyls of methicillin produces the isoxazolyl penicillin<br>
+<ul>
+<li>Chemically, they differ from one another in the number of chlorine substituents on the benzene ring</li>
+</ul>
+</p>
+
+<p>
+<img src="./Medicinal_Chemistry/pasted_image006.png">
+</p>
+
+<h2>Penicillinase-Sensitive, Broad-Spectrum, Oral Penicillins</h2>
+
+<br>
+
+<p>
+→  ampicillin, is a benzylpenicillin analogue in which one of the hydrogen atoms of the side-chain methylene has been replaced with a primary amino group to produce an R-phenylglycine moiety <br>
+<ul>
+<li>electron withdrawing character of the protonated primary amine group, reducing participation in hydrolysis of the β-lactam bond as well as to the comparative difficulty of bringing another positively charged species (H3O+) into the vicinity of the protonated amino group</li>
+</ul>
+<img src="./Medicinal_Chemistry/pasted_image007.png">
+</p>
+
+<p>
+→ oral efficacy of ampicillin for systemic infections can be enhanced significantly through the preparation of pro-drugs<br>
+<img src="./Medicinal_Chemistry/pasted_image008.png"><br>
+<ul>
+<li>, bacampicillin is a weak base and is very well absorbed in the duodenum (80–98%). Enzymatic ester hydrolysis in the gut wall liberates carbon dioxide and ethanol, followed by spontaneous loss of acetaldehyde and production of ampicillin</li>
+</ul>
+</p>
+
+<p>
+→  Amoxicillin is a close analogue of ampicillin, in which a para-phenolic hydroxyl group has been introduced into the side-chain phenyl moiety<br>
+<ul>
+<li>adjusts the isoelectric point of the drug to a more acidic value, and this is believed to be partially responsible,, along with the intestine peptide transporter, for the enhanced blood levels obtained with amoxicillin as compared to ampicillin itself </li>
+</ul>
+<img src="./Medicinal_Chemistry/pasted_image009.png"><br>
+→ Clavulanic acid  serves to protect amoxicillin to a considerable extent against β-lactamases<br>
+<ul>
+<li>a mold product with only weak intrinsic antibacterial activity</li>
+<li>irreversible inhibitor of most β-lactamase</li>
+<li>acylate the active site serine by mimicking the normal substrate ( suicide substrate)</li>
+<li><img src="./Medicinal_Chemistry/pasted_image010.png"></li>
+</ul>
+→ Tazobactam<br>
+<ul>
+<li>often is coadministered with piperacillin because of tazobactam's ability to inhibit β-lactamases. </li>
+</ul>
+SULBACTAM<br>
+→  prepared by partial chemical synthesis from penicillins<br>
+→ oxidation of the sulfur atom to a sulfone greatly enhances the potency of sulbactam
+</p>
+
+<p>
+→ Mezlocillin and piperacillin(parentally)<br>
+<ul>
+<li>ampicillin derivatives in which the D–side chain amino group has been converted by chemical processes to a variety of substituted urea analogues  → known as acylureidopenicillins</li>
+<li>side-chain moiety mimics a longer segment of the peptidoglycan chain than ampicillin does → cell wall fragment usually is a tetrapeptide, so there certainly is room for an extension in this direction</li>
+</ul>
+<img src="./Medicinal_Chemistry/pasted_image011.png"><br>
+→ Carbenicillin and indanyl carbenicillin( injection)<br>
+<ul>
+<li>benzylpenicillin analogue in which one of the methylene hydrogens of the side chain has been substituted with a carboxylic acid moiety </li>
+<li>side-chain carboxyl produces enhanced anti-Gram-negative activity</li>
+<li>carbenicillin can decarboxylate readily to produce benzylpenicillin </li>
+</ul>
+→ Ticarcillin<br>
+<ul>
+<li>a sulfur-based bio-isostere of carbenicillin that cannot decarboxylate as the carboxyl group of carbenicillin does</li>
+<li>When potassium clavulanate is added to ticarcillin (Timentin), the combination has enhanced antipse– domonad activity because of its enhanced stability to lactamases</li>
+<li><img src="./Medicinal_Chemistry/pasted_image012.png"></li>
+</ul>
+</p>
+
+<h1>CEPHALOSPORINS:</h1>
+
+<br>
+
+<p>
+→ r β-lactam ring annealed to a 6-membered dihydrothiazine ring <br>
+<ul>
+<li>As a consequence of the bigger ring, the cephalosporins should be less strained and less reactive/potent</li>
+<li>reactivity loss, however, is made up by  possession of an olefinic linkage at C-2,3 and a methyleneacetoxy group at C-3.</li>
+</ul>
+→  β-lactam bond of the cephalosporins is broken is modulated both by the nature of the C-7 substituent (analogous to the penicillins) as well as by the nature of the C-3 substituent and its ability to serve as a leaving group
+</p>
+
+<p>
+<img src="./Medicinal_Chemistry/pasted_image013.png"><br>
+<img src="./Medicinal_Chemistry/pasted_image014.png">
+</p>
+
+<h2>SAR</h2>
+
+<p>
+→ f an amino and a hydrogen to the α and α′ position, respectively, results in a basic compound that is protonated under the acidic conditions <br>
+<ul>
+<li>ammonium ion improves the stability of the β-lactam </li>
+<li><img src="./Medicinal_Chemistry/pasted_image016.png"></li>
+</ul>
+</p>
+
+<p>
+→ 7β amino group is essential for antimicrobial activity (X = H),<br>
+<ul>
+<li>replacement of the hydrogen at C-7 (X = H) with an alkoxy (X = OR) results in improvement of the antibacterial activity </li>
+<li>methoxy also improves the drugs stability toward β-lactamase. </li>
+<li>The derivatives where Y = S exhibit greater antibacterial activity than if Y = O, </li>
+<li>*  Z is a 5-membered heterocycle versus a 6-membered heterocycle.</li>
+</ul>
+</p>
+
+<p>
+⇒ [changes improved β-lactamase resistance: 1) The L-isomer of an α amino α′ hydrogen derivative of a cephalosporin was 30- to 40-fold more stable than the D-isomer, 2) the addition of a methoxyoxime to the α and α′ positions increased stability nearly 100-fold, and 3) the Z-oxime was as much as 20,000-fold more stable than the E-oxime (Fig. 38.22). These changes have been incorporated into a number of marketed and experimental cephalosporins (Cefuroxime, Ceftizoxime, Ceftazidime, and Cefixime]
+</p>
+
+<h2>1ST GENERATION</h2>
+
+<p>
+Parental use<br>
+CEFAZOLIN<br>
+→ C-3 replaced by a thio-linked thiadiazole ring ( activating leaving group, the moiety is not subject to the inactivating host hydrolysis reaction that characterizes cephapirin. )<br>
+→  C-7, it possesses a tetrazoylmethylene unit<br>
+→  is comparatively unstable and should be protected from heat and light.
+</p>
+
+<p>
+<img src="./Medicinal_Chemistry/pasted_image019.png"><br>
+→ CEFADROXIL (oral use_)<br>
+<ul>
+<li>amoxicillin-like side chain at C-7 and is orally active</li>
+</ul>
+<img src="./Medicinal_Chemistry/pasted_image020.png"><br>
+→ CEPHALEXIN<br>
+<ul>
+<li>ampicillin-type side chain conveys oral activity to cephalexin</li>
+<li>it no longer has an activating side chain at C-3 and, as a consequence, is somewhat less potent</li>
+<li>Puzzling is the fact that the use of the ampicillin side chain in the cephalosporins does not result in a comparable shift in antimicrobial spectrum</li>
+</ul>
+→ CEPHRADINE<br>
+<ul>
+<li>e aromatic ring in the ampicillin side chain has been partially hydrogenated by a Birch reduction such that the resulting molecule is still planar and π-electron excessive but has no conjugated olefinic linkages</li>
+<li>omparatively acid stable and, therefore, is rapidly and nearly completely absorbed from the GI tract</li>
+<li>used both orally and IM so that parenteral therapy </li>
+</ul>
+</p>
+
+<h2>Second-Generation Cephalosporins</h2>
+
+<br>
+
+<p>
+→ CEFAMANDOLE NAFATE<br>
+<ul>
+<li>formylated D-mandelic amide moiety at C-7. </li>
+<li>Formate ester is cleaved rapidly in the host to release the more active cefamandole →overcome the  instability of cefamandole when it is stored in dry form</li>
+<li>Loss of the 5-thio-l-methyl-l-H-tetrazole moiety from C-3 → prothrombin deficiency and bleeding problems </li>
+<li>enhances potency and prevents metabolism by deacetylation</li>
+</ul>
+<img src="./Medicinal_Chemistry/pasted_image021.png"><br>
+→ CEFUROXIME<br>
+<ul>
+<li>a Z-oriented methoxyimino moiety as part of its C-7 side chain  → considerable resistance to attack by many β-lactamases</li>
+<li>carbamoyl moiety at C-3 is intermediate → metabolic stability between the classic acetyl moieties and the thiotetrazoles</li>
+</ul>
+→ CEFUROXIME AXETIL<br>
+<ul>
+<li>axetil ester (1-[acetyloxy]ethyl ester) pro-drug</li>
+<li>more lipophilic drug is produced that gives satisfactory blood levels on oral administration</li>
+<li>ester bond is cleaved → resulting intermediate form loses acetaldehyde spontaneously to produce cefuroxime itself</li>
+</ul>
+</p>
+
+<p>
+→ CEFOXITIN<br>
+<ul>
+<li>C-7 side chain as cephalothin and the same C-3 side chain as cefuroxime</li>
+<li>α-oriented methoxyl group in place of the normal H-atom at C-7. → increased steric bulk conveys very significant stability against β-lactamases</li>
+</ul>
+</p>
+
+<p>
+<img src="./Medicinal_Chemistry/pasted_image022.png"><br>
+→ CEFACLOR<br>
+<ul>
+<li>Cefaclor differs from cephalexin primarily in the bio-isosteric replacement of methyl by chlorine at C-3 and is quite acid stable, allowing oral administration. It also is quite stable to metabolism. It is less active against Gram-negative bacteria compared with the other second-generation cephalosporins but is more active against Gram-negative bacteria compared with the first-generation drugs</li>
+</ul>
+</p>
+
+<br>
+
+<p>
+→ CEFOTAXIME<br>
+<ul>
+<li>a Z-methoxyimino moiety at C-7 that conveys significant β-lactamase resistance.</li>
+<li>oxime moiety of cefotaxime is connected to an aminothiazole ring</li>
+<li>metabolically vulnerable acetoxy group attached to C-3 and loses approximately 90% of its activity </li>
+</ul>
+<img src="./Medicinal_Chemistry/pasted_image023.png"><br>
+→ CEFPODOXIME PROXETIL<br>
+<ul>
+<li>pro-drug</li>
+<li>cleaved enzymically to 2-propanol, carbon dioxide, acetaldehyde, and cefpodoxime in the gut wall. </li>
+</ul>
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+			<b>Attachments:</b>
+			<table>
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image.png'>pasted_image.png</a></td><td>&nbsp;</td><td>7.30kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image001.png'>pasted_image001.png</a></td><td>&nbsp;</td><td>98.4kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image002.png'>pasted_image002.png</a></td><td>&nbsp;</td><td>42.1kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image003.png'>pasted_image003.png</a></td><td>&nbsp;</td><td>43.8kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image004.png'>pasted_image004.png</a></td><td>&nbsp;</td><td>41.1kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image005.png'>pasted_image005.png</a></td><td>&nbsp;</td><td>60.2kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image006.png'>pasted_image006.png</a></td><td>&nbsp;</td><td>62.5kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image007.png'>pasted_image007.png</a></td><td>&nbsp;</td><td>61.8kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image008.png'>pasted_image008.png</a></td><td>&nbsp;</td><td>73.9kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image009.png'>pasted_image009.png</a></td><td>&nbsp;</td><td>53.1kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image010.png'>pasted_image010.png</a></td><td>&nbsp;</td><td>68.8kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image011.png'>pasted_image011.png</a></td><td>&nbsp;</td><td>61.2kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image012.png'>pasted_image012.png</a></td><td>&nbsp;</td><td>64.3kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image013.png'>pasted_image013.png</a></td><td>&nbsp;</td><td>41.3kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image014.png'>pasted_image014.png</a></td><td>&nbsp;</td><td>37.2kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image015.png'>pasted_image015.png</a></td><td>&nbsp;</td><td>37.2kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image016.png'>pasted_image016.png</a></td><td>&nbsp;</td><td>15.5kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image017.png'>pasted_image017.png</a></td><td>&nbsp;</td><td>55.7kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image018.png'>pasted_image018.png</a></td><td>&nbsp;</td><td>33.4kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image019.png'>pasted_image019.png</a></td><td>&nbsp;</td><td>33.5kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image020.png'>pasted_image020.png</a></td><td>&nbsp;</td><td>29.0kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image021.png'>pasted_image021.png</a></td><td>&nbsp;</td><td>44.7kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image022.png'>pasted_image022.png</a></td><td>&nbsp;</td><td>40.7kb</td></tr>
+
+
+			<tr><td><a href='./Medicinal_Chemistry/pasted_image023.png'>pasted_image023.png</a></td><td>&nbsp;</td><td>44.9kb</td></tr>
+
+			</table>
+	</div>
+
+	
+
+</div>
+
+</body>
+</html>

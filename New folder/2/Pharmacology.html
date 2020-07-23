@@ -1,0 +1,519 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>OPIOIDs</title>
+	<meta name='Generator' content='Zim 0.73.1'>
+	<style type='text/css'>
+		a          { text-decoration: none      }
+		a:hover    { text-decoration: underline }
+		a:active   { text-decoration: underline }
+		strike     { color: grey                }
+		u          { text-decoration: none;
+					 background-color: yellow   }
+		tt         { color: #2e3436;            }
+		pre        { color: #2e3436;
+					 margin-left: 20px          }
+		h1         { text-decoration: underline;
+					 color: #4e9a06; margin-bottom: 0 }
+		h2         { color: #4e9a06; margin-bottom: 0 }
+		h3         { color: #4e9a06; margin-bottom: 0 }
+		h4         { color: #4e9a06; margin-bottom: 0 }
+		h5         { color: #4e9a06; margin-bottom: 0 }
+		p          { margin-top: 0              }
+		span.zim-tag {
+			color: #ce5c00;
+		}
+		div.zim-object {
+			border-style:solid;
+			border-width:1px;
+		}
+		.checked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8sMEGsKGkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEBUlEQVRIx62V22tdRRTGf7Nn73P2ybntnNOe3NqkPTGgLTVUUZF6QatSLOKTPgqCIqLgQ0H/A1sQQbBYCBb1QfAxiC8tSO1FqHkwJVKtjdTGNraUmObsc9nXmfGh7cGYpM1D5nHWzPetteZb3wg2eB2YqYm4zSadsMtoboiNBH/3TE0awx6j+MRoxoTg/IYRvP19TQrJS0bzhdHGSyKFkLTtjSKwMjyiEz43ynhtP6bdjBCWyFobAf7eT7VhNF/q1FRbjYjmUohlCVPwnB+6FUxMTJipqSmUUhhjEGKd3bMT4ks/Y6oLBK2Yth8hHYtCJXOix7Nf7xLMzc0xOzvLzp078TyPNE3viW3QJPXzhNWbxFFKHCmMhoLn/FHodd48vGfhapdAacXQlkFK5dL6wIUm6fuTZPuvqDQhaMUYYyiVyuQr6rXDexYuAdi3tSv1ZJNs/R/CaszzT+1na88uXFnCEnJVgivBNN8uTJKmHQI/ptOOcXNZzMz9mOqFs90OHpipWcYwlo5P4ebnuOkrvr5wgrH+h3im7y36MzuwRXYZeKha/OhP0EkadFoxQSdGSotedR/+XwMc2XvKdNUFOFqZx6LKZWIiwjgkikNmLp/hm8sH+K1zjFTHXfBYdTi+eJArzXM0GxFxoBDCopLvo/fqEwi1XPkWkGqjFo2TgB1jOYZUKZTS/D1/ncmLh7jon0IbRWoiTi59ymzzJEEQE3cStNZsGxqlfPE57MBbOR8fP3hDGalOO9fq2DlBvmZw8xa2IxACGn6TydlD/O6f5OzSV/zif0cYhLQaEXGkKBbz7Ov/AOlXV1cxgBJRI3fuSTrpTawt18kWIZN1CFuaONI0w0WOXfsI43YIggh/KUSlhqxrMz74AkOZcWBm9QkH+Gw8NDLuITi+m0yzhluSyJzBLcpblUhFxywSRAEtPwQjsKVN30CNh0uvYuOubSHLtN3J0TO1j0pmBNuFbFWRK0gyPRZpktL2I5JQkclKakNlnh54g6ocvevUr/Ai2a7wineEkcJupA3S1Wg0nVZM2E6wbEF5U5G9Q++wI7sfR7h3N8HVNstykBfzH+KJEZwiWD0aIwxCgJ0R1Mu7GXOeJSuK93bZtQIle4D9pUNU5DC5jEsu55AvZakM5NicGyEj8uuz8bUCQgj67QfY671P3vEoeC69gy695U1U7NG7XV0pUwBjDJa1/JJlWWxzHuflzQe5FJ/GsgUVuZ2t8lEkTvfc0aNHb72flBhjVicQQqCUuvM3/M+WDVguWBrMVdDXEGZlBVEUrVCU9d9s5+fnaTQa2PZyPxEIhJaI1EEoZwX4ncynp6fXrmB4eJjR0VFarRbNZnP9P9rt9gohqNVq1Ov1ZbF/AZGev3hLJ2/zAAAAAElFTkSuQmCC)}
+		.xchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8bDYnDxEwAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAEK0lEQVRIx9WVS2hTWRjHf/eR3CY1nbxMH2YiZRQS6qO13YlMVxY3SnVcuNIBFezGpSADLoQqLu1sHJCqdCFSXFpw4YOCSH3BtFqttTNamabX3DS5bfO6uffMoglja3RGcDMHzuac7/z/53++//cd+L8P6VuCPQYZ8ADNgBd4J31DcDcQs+GnHByRocEDv0kfBSjAOlYCs11Q+gpwDegS8LMJ+3QIK0ATzEhV8Odnz5bzw8P4dJ25aJQ/WlvJ1df/K7hSLtOcTNI+Pk69rpMTgqIQhCDvh1/VSpw79+gRrRMTmLZNezLJJsPg+a5dmOEwQlFqg1sWG16/Jv7sGWXDwBACFQjC9HcwIMONKkGp4PGAJGEDS0IQmZlhnWnye3c3eiyGo6qr3WHbrJ+dJf7gAXI6zSIr72T7/fgzmT4FHnTBsgrQBfYvTU0km5vxz86iADnAm0rRPTWFt7cXZccOJJcLAGHb2K9ekT93jmwmwwdAAFpjI6Ntbfxw5879ag7l6o1sr5eHHR3IsRgeQK/M4sQE+YEB7JcvEY6zAj45SWFgAPPxYwzHoQxIkQjTPT0kIxE+Noj8sexFn4/xnh58iQTeSpHkHAdrbIzi0BCOrmNPTpK/eJHM3bt8sCyKQCiR4NWePWSiUZw1+ZLXJm4pFKLhzBlCsRh2RUXacVgeGaF47RrL58+zcP8+RrmMkCQinZ1EL1zAjERqmkH+tLYl1G3bCJw4QUjT0IA0MJfLMX/5MqmHD0nZNiUgtGULG/r7ccXjINWuWbnmqsuFu7sb/4EDNLlcBIEioNs2KUAFGmMxmk6dQm1tRZI+3xBqEkiShBQOox05Ql1nJ26gvuIUAWiKQnj/ftStW5Fk+YuF+NldsbBA4cYN9KdPmaso8Fc62ZJtk7l1C2t0FGdxESHE1xE4hkHh6lX0oSHSpRIewC/LrPf7CSgKNpCamkI/fZr8pUuIZBIcpyaBunahPp1mub+fDyMjGKUSChCsq6Nh717q9u2jbnSU0uAgRrFIwTThyhUCqRS+hgZKLS1fJvDm87SNjZGcnsYUAjcQ8vsJ9/Xh7u1FDgRQN20iks3iDA+zZFmYhQLqzZtsj8WY3L0baY2Sf55ICCKpFHUzM2SEQAJCHg+hY8fQDh5EDgRWDoRC1J88SePRo2geD0XAcBy8b98Sv3ePYDZbbf2rFQjLIphMsmDbaEBQVQkePox26BCSz7e6i4bDrDt+nGYhmBscpFAskheC4Js3bPR4qHphFYEnlcI7P4/jdqNpGu8TCe4oCsXr1z//F2ga3+/cSfTJE0qmSVYIsKzaOZDcbjKyzFIiwfvt21kMBLA07YsetzWNd+3tLLW0sH5igvT8PH9Go/z44kX+E4LGjg7GDYOcy4XlOEgLC//5P/5LCFzxOPLmzWyIx+m6fduu7v0NVGqyTSycKksAAAAASUVORK5CYII=)}
+		.unchecked-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB9gKGQ8qAt8h3m8AAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAA60lEQVRIx+2VsQqDMBRF70sCLg5OLoKgjk7+lJ/hh+STXBwcnRz8ArMEkrxOFktbaC3tULzTg5e8k5vADXDq70VbobXmvu/hvQczg4heHrJfXxQFuq67blZbMc8zpmlCXddIkgTOuZcBUko45zCOI6y1Nz2xFSEEZFmGOI7fGg4A3nsQEZqmuXOu9jallACAtm3fvmutNaIoAjM/dkBECCF89KCbk4eAb+kEnIAT8EsAM0OIz3hSyrssUvss8t5fg+uIrLXPs0gIgWVZYIyBUurQyYdheO4gz3NUVQVjDNZ1PfSjpWmKsixvehfB9GBZ3NndrgAAAABJRU5ErkJggg==)}
+		.migrated-box {list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAANOgAADMQBiN+4gQAAAAd0SU1FB+AKHREFA8vJSnkAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJTVBXgQ4XAAAC1klEQVRIx+2VT0hUURTGf/e958w4Tc3TYowMw1GyEgwr1MqsFmbZIrIWQZsWJUjbdoHQpl3Qps0swnCRECQFYkR/TC1iKkqmfzAKTo2Vf8hoRsfR995tkRMT87RRWkUHHhy495zvnvvu933wP/75EKkkEAjIYDCIaZpIKRFCZN0kfX9xcTGtra2/irVUEolECIfDlJeXo+s6hmFkDaCqKoZhEAqFSCaTv60pqcSyLAoLC/F4PEtqDmCaJkIIKisrMybX0sdUVRWA5ubmPzdNjjI1cpXkZC/O1fV03PXgdDqRUtpPIITAsqxsDz0Z/3CZQv8uqo4N4C8/Tp2/DdM0MiZQlvk41OTkI/LW1SGtCVb5drD3eCc71wcA+VcAHA5vDd8+3UGakxiJV7i9pdQevU5T1R35pJ3MV5QW1pf+0kWBheJ2SWua8EQXZXsu4fVVYEz1sEKvof5EuxjoPvzpcRvrdp9C2gGMx6cpOHBmbImMesds7BZubwMVDTfXDnQ3vQfK7AC8wLfExMX5whyQc3q2OEnjGm5vE76SQxsfBLr77a7CNf+n0r/l6sSMtsBSnurckiIILCobAtVZhpF4gZF4jubaymj4Ch/fd380LE7bAnjc0NPxk2yqpmEuwGxF0ag+0k5uTpzZeBeaazvj0We8fXojainsb2xh2BZgbe0gSIllzSIUh63wfQ6dZ/O2fbjcKlOj58jJ3cVENESw5yErc9nf2MLQ4jwQAkV1Lqiq37/cZ9WaahJjF9AcmxiPDhLs7ePe23oOnmUwg2hSShQle96tKDjA2HAniusgo9FxnvY9Jxw7RWzGYy92QghM00x5g53qp9sHmtB58/o2umOI2NwGolMnMYUHIb7aAyiKwsjICLqu2/qBEIKUUAohMaSHSLyBSMoPTINQ6CX5+fn2AEVFRZSUlBCPx4nFYhl3L4RESjF/GEgX3pSj+Xw+/H7/b3U/AEOZFnp7O5+5AAAAAElFTkSuQmCC)}
+		ul {list-style-image: none}
+		/* ul rule needed to reset style for sub-bullets */
+	</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class='header'>
+	[ <a href='./Pharmacognosy.html'>Prev</a> ]
+
+	[ <span class='insen'>Index</span> ]
+
+	[ <a href='..\3.html'>Next</a> ]
+</div>
+
+<hr />
+
+<!-- Wiki content -->
+
+<div class='pages'>
+	<div class='heading'>
+	<h1>OPIOIDs <a name='2:Pharmacology'></a></h1>
+	</div>
+
+	<div class='content'>
+	<h5>OVERVIEW:</h5>
+
+<p>
+→ Nociceptive pain / Neurogenic pain<br>
+→ morphine-like effects<br>
+→ mimic the action of <i>endorphines/eknkephalins/dynorphines</i><br>
+→ relieve intense pain<br>
+→ abuse because of euphoric properties<br>
+→ anatognist can reserve the action of opiods
+</p>
+
+<h2>OPIODS RECEPTORS</h2>
+
+<p>
+→ interact stereospecically <br>
+→ μ,κ,δ<br>
+→ different specificity <br>
+→ analgesic properties of μ &amp; κ receptor (drosal honrs)<br>
+→ members of G-protein-coupled receptor family &amp; inhibit adenyly cyclase <br>
+→ ions channels ( ↑ K+ / ↓ Ca2+ )   
+</p>
+
+<br>
+
+<h2>STRONG AGONIST</h2>
+
+<br>
+
+<h4>A.Morphine</h4>
+
+<p>
+<b>1.Mechanism o action</b><br>
+→ receptors on CNS/PNS/GI/Urinary bladder<br>
+→ cause: -  hyperpolarization of nerve cells<br>
+<div style='padding-left: 150pt'>
+-   inhibition of nerve firing &amp; transmitter release (postynaptic) 
+</div>
+<ul>
+<li>act at  κ receptor(laminaI/II at drosal horn) → decrease release of substance P</li>
+<li>inhibit release of excitatory transmitters </li>
+</ul>
+<b>2.Actions</b><br>
+<ol type="a" start="1">
+<li>ANALGESIA: -by raising the pain threshold at the spinal chrod level &amp; alerting the brain's perception of pain ) </li>
+<li>EUPHORIA:   -disinhibition of  dopamine-containing neuros of the ventral tegmentum </li>
+<li>RESPIRATION :  - respiratory depression (reducing of the sensitivity of respiratory neurons to CO2)</li>
+<li>DEPRESSION OF COUGH : -anti-tussive properties </li>
+<li>MIOSIS : - "pinpoint pupil" (due to  μ&amp;κ receptor activation)</li>
+</ol>
+<div style='padding-left: 180pt'>
+-  enchance parasympathetic simulation of the eye (due to excitment of Edinger-Westphal nucleus)
+</div>
+<ol type="a" start="6">
+<li>EMESIS : - vomiting (due to stimulation of chemoreceptor trigger zone in the area postrema )</li>
+<li>GIT : - relieves diarrhea &amp; dysentery   ( ↑ tone &amp; ↓ motility of intestinal cirular smooth muscle ) //  ↑ tone of anal sphincte</li>
+</ol>
+<div style='padding-left: 120pt'>
+- constipation ( use of stool softener "docusate" + stimulant laxative "sena" )
+</div>
+<ol type="a" start="8">
+<li>CARDIOVASCULAR : - no major effects  ** in large doses  Hypotension&amp;Bradycardia may occur</li>
+</ol>
+<div style='padding-left: 330pt'>
+  - Resp depr + Co2 retention = dilated cerebral vessels &amp; ↑ CFS  → CONTRAINDICATED:  on head/brain injury
+</div>
+<ol type="a" start="10">
+<li>HISTAMINE RELEASE : - cause urticaria,sweating,vasodilation</li>
+</ol>
+<div style='padding-left: 360pt'>
+  - bronchoconstricion CONTRAINDICATED to asthmatics 
+</div>
+<ol type="a" start="11">
+<li>HORMONAL ACTIONS: - ↑ GH release &amp; enchance prolactin secration</li>
+</ol>
+<div style='padding-left: 390pt'>
+- ↑ antidiuretic hormone = urinary retention  
+</div>
+<b>3.Therapeutic uses:</b><br>
+<ol type="a" start="1">
+<li>ANALGESIA (as supplament for inducing-sleep properties of Temazepam) </li>
+<li>DIARHHEA treat. ( tincture of opium and camphorated tincture of opium (paregoric) have been used to treat diarrhea )</li>
+<li>COUGH treat. ( although suppress cough Codein/Dextormethorphan are widely choosen) </li>
+<li>ACUTE PULMONARY EDEMA treat. (IV. dramatically relieves dyspnea )</li>
+</ol>
+<b>4.Pharmacokinetcs:  (linear) -  ( predictable+flexible dosaging)</b><br>
+<ol type="a" start="1">
+<li>ADMINISTRATION :  -first pass metabolism occurs in <i>liver</i></li>
+</ol>
+<div style='padding-left: 330pt'>
+   -absorbtion  from GIT is slow + erratic  ( P.O admn. extended-release version form to provide  consistent plasma level)
+</div>
+<ol type="a" start="2">
+<li>DISTRIBUTION : - rapidly enters all body tissues (including fetuses)</li>
+</ol>
+<div style='padding-left: 300pt'>
+ -small % crosses blood-brain barrier ( least lipophilic of the common opiods)  // fentanyl/methadone more fat-soluble)
+</div>
+<ol type="a" start="3">
+<li>FATE:  -conjugation with glucuronic acid  in the liver </li>
+</ol>
+<div style='padding-left: 120pt'>
+  - excreted  primarly in urine / lesser on bile<br>
+ - 4 of 6 hours but much considerably longer when injected epidurally <br>
+ -elderly more sensitive 
+</div>
+<b>5.Adverse effect:</b><br>
+→ severe respiratory depression (avoid or monitor patient with emphysema )<br>
+→ vomiting,dysphoria,hypotenison<br>
+→ ↑ intracranial pressure <br>
+→ enchance cerebral &amp; spinal ishemia <br>
+→ acute urinary retention <br>
+→ used cautiously - in bronchial asthma, liver failure,  impaired renal function <br>
+<b>6.Tolerance and Physical dependence:</b><br>
+→ repeated usage produces tolerance<br>
+→ physical and psycological dependence oocur  <i> withdraw : autonomic,motor,psychological responses  </i> detoxification : PO admn of <i>methadone,buprenorphine,clonidine</i><br>
+<b>7.Drug interaction: </b><br>
+→ rare<br>
+→ depressant action may enhances by <i>phenothiazines,MAOIs,tricyclic antidepressants </i>
+</p>
+
+<h4>B.Meperidine (synthetic opiod sturctually unrelated to morphine, acute pain )</h4>
+
+<p>
+<b>1.Mechanism of action :</b><br>
+→  μ &amp; κ  <br>
+<b>2.Actions:</b><br>
+→ depression of respiration similar to morphine<br>
+→ no cardiovascular action on PO admn.  // IV admin. ↓ peripheral resistance &amp; ↑ peripheral blood flow  =  ↑ Cardiac rate<br>
+→  as  morphine  ↑ CFS + dilates cerebral vessels + contract smooth muscle  to a lesser extent<br>
+→ does not cause pinpoint pupil rather dilate it through the anticholinergic action<br>
+<b>3.Therapeutic uses: </b><br>
+→ANALGESIA  (NOT recomended for long-term use due to its active metabolite <i>"normeperidine" which has neurotoxic properties) </i><br>
+→ does not treat diarrhea or cough <br>
+→ ↓ urinary retention than morphine <br>
+<b>4.Pharmacokinetics: </b><br>
+→ well absorbed from the GIT ( available of PO admn.) <br>
+→ most often admn. parenterally <br>
+→ 2 to 4 hrs<br>
+→ N-demethylated to "<i>normeperidine" in the </i>liver and exrected in urine.<br>
+<b>5.Adverse effects: </b><br>
+→ large/repeatative doses = anxiety,tremor,muslcle twitches // dilate pupil + hyperactive reflexes<br>
+→ hypotension (admn. postoperatively) <br>
+→ dry mouth &amp; blurr vision (due to antimuscarinic action)<br>
+→ depression enouraged with other antipsychotics drugs<br>
+→ Beer list ( inappropriate for geriatric / impaired renal function due to accumulation  of normeperidine)<br>
+→ not revesible by admn. of <i>naloxone</i>
+</p>
+
+<h4>C.Methadone  (synthetic,orally effective opioid,equianalgesic potency to morphine,less euphoria,longer duration of action )</h4>
+
+<p>
+<b>1.Mechanism of action : </b><br>
+→  μ receptor<br>
+→ antagonist of NDMA receptor <br>
+<b>2.Actions: </b><br>
+→ well absorbedby GIT (better PO admn, &gt; morphine)<br>
+→ ↑ biliary pressure <br>
+→ constipation  &lt; morphine<br>
+<b>3.Therapeutic uses:</b><br>
+→ ANALGESIC (nociceptive&amp;neurogenic pain)<br>
+→ controlled withdrawl symptoms of dependent abusers from <i> heroin &amp; morphine (milder withdrawl syndrome but more proactive(days to weeks) than other opioids</i><br>
+→  PO admin. sub of IV morphine<br>
+<b>4.Pharmacokinetics</b><br>
+→ PO admn.<br>
+→ biotransformed in the liver and exrected feces (due to increased lipophilicity)<br>
+→ half-time : 12 to 40 hrs  ( leading to toxicity ) <br>
+→ 4 to 6 hrs of action<br>
+→  relies in multiple CYP450 enzymes , affected by genetic polymorphism,many d-d interactions<br>
+<b>5.Adverse effects</b><br>
+→ physical dependance <br>
+→ torsades de pointes
+</p>
+
+<h4>D.Fentanyl  ( chemically related to meperidine )</h4>
+
+<p>
+→ 100-fold the analgesic potency of morphine<br>
+→ highly lipophilic <br>
+→ rapid onest and short duration(15-30min)<br>
+→ admn. IV,epidurally,intrathecally,transmuscosally,transdermally ( used with caution, death from <b>hypovventilation</b> occurs)<br>
+<ul style='padding-left: 360pt'>
+<li>creates a reservoir of the drug in the skin, onest is delayed + offset prologned</li>
+</ul>
+→ negliglbe effects on myocardial contractillity <br>
+→ metablized  by the CYP450 3A4 system<br>
+→ eliminated through urine <br>
+→ ADR similar to μ-receptor agonists<br>
+→ unlike to meperidne causes pupillary constriction
+</p>
+
+<h4>E.Sunfentanil,Alfentanil,Remifentanil</h4>
+
+<p>
+→ differ  in    potency and metabolic disposition<br>
+→ Sunfenantil &gt;Fentany whereas the other two are less potent and shorter acting.
+</p>
+
+<h4>F.Heroin</h4>
+
+<p>
+→ produced by diacetylation of morphine → threefold of potency <br>
+→ greater lipid solubility allows to croos blood-brain barrier &gt;morphine<br>
+→ exaggerated euphoria<br>
+→ half long lasting than morphine
+</p>
+
+<h4>G.Oxycodone and Oxymorphone (Semi-synthetic derivative of morphine)</h4>
+
+<p>
+→Orally active (even formulated with <i>asprin and acetaminophen)</i><br>
+→  modarate/sever pain <br>
+→ oral analgetic effect twice that of morphine<br>
+→ metabolized via CYP450 2D6  &amp; 3A4 enzymes system  <br>
+→ exrected via the kidney <br>
+<ul>
+<li><b>OXYMORPHONE</b></li>
+</ul>
+→ narcotic analgesic<br>
+→ potency similar to hydromorphone<br>
+→ immediate-acting &amp; extended-release formulation<br>
+→ not clinically relevant drug-drug interactions compared to oxycodone
+</p>
+
+<h4>H.Hydromorphone and hydrocodone (Semi-synthetic analogues of morphine and codeine)</h4>
+
+<p>
+→ Orally active<br>
+→ severe pain<br>
+→ Po admn. 8 to 10 more potent than PO morphine<br>
+→ preferred over morphine to patient with renal  dysfunction <br>
+*<b>HYDROCODONE</b><br>
+→ methylether of hydromorphone<br>
+→ apprx, same as oral morphine on effectiviness<br>
+→ modarete to severe pain<br>
+→ antitussive <br>
+→ metablized CYP450 2D6  which can be affected by drug drug interactions.
+</p>
+
+<h2>MODERATE/LOW AGONIST</h2>
+
+<br>
+
+<h3>A.Codeine</h3>
+
+<p>
+→ANALGESIC properties derived from  conversion to <i>morphine </i>by CYP450 2D6 <br>
+→ ANTITUSSIVE effects<br>
+→ less potent analgesic than morphine<br>
+→ lower potential for abuse than morphine<br>
+→ combined with aspirin &amp; acetaminophen<br>
+→ replaced by drugs such as <i>dextromethorphan</i>
+</p>
+
+<h2>MIXED AGONIST-ANTAGONIST AND PARTIAL AGONIST</h2>
+
+<br>
+
+<p>
+<ul>
+<li>drugs which stimulate one receptor but block another are termed as MIXED AGONIST-ANTAGONIST</li>
+<li>depends on the previous exposure to opioids</li>
+<li>on naive patients RELIEVE PAIN</li>
+<li>on exposed patients drug may show primarly blockin effects → withdrawl symptoms </li>
+</ul>
+</p>
+
+<h3>A.Pentzocine</h3>
+
+<p>
+→ agonist on  κ receptor<br>
+→ weak antagonist of μ &amp; δ<br>
+→ PO or parenterally amdn.<br>
+→ modarate pain <br>
+→ less euphoria than morphine<br>
+→ high doses cause - respiratory depression   - ↓ GI activity  - ↑ b.p.  - hallugnation - nightmares - dysphoria - tachycardia - dizziness <br>
+→ ↑ aortic pressure &amp; pulmonary arterial pressure = ↑ work of the heart <br>
+→ ↓ renal plasma flow<br>
+→ does not antagonise respiratory depression of morphine<br>
+→ can precipitate withdrawl symptoms to a morphin 
+</p>
+
+<h3>B.Burenorphine(Subutex)</h3>
+
+<p>
+→ partial agonist on μ receptor<br>
+→ acts as morphine in naive patients // precipitate withdrawl symptoms to abusers<br>
+→ Major use: DETOXIFICATION <br>
+→ less severe &amp; shorter duration of withdrawl symptoms than <i>methadone</i><br>
+→ little sedaton,respiratory depression,hypotension ( high doses)<br>
+→ when admin. sublingually,parentally,transdermally  → logner duration of action (tight binding on m receptor)<br>
+→ buprenorphine+naloxone (<i>S</i>UBOXONE) (to prevent abuse of buprenorphine) vi IV amdn.<br>
+→ trasndermal patch once a week indicated for the relief of  modarate/severe pain<br>
+→ metabolized by the liver and exrectedi in bile and urine<br>
+→ ADR - respiratory depression - ↑ / ↓ blood pressure - nausea -diziness 
+</p>
+
+<h3>C.Nalbuphine and butorphanol</h3>
+
+<p>
+→ like pentacozine play a limited role in the treatment of chronic pain // no oral use<br>
+→ cause psychotomimetic effects<br>
+→ does not affect the heart in contrast with <i>pentazocine and butorphanol</i><br>
+→ exhibit a celing effect for respiratory  depression
+</p>
+
+<h2>OTHER ANALGESICS</h2>
+
+<br>
+
+<h3>A.Tramadol</h3>
+
+<p>
+→ μ receptor <br>
+→ centrally acting ANALGESIC<br>
+→ extensive metabolism  CYP 450 2D6 → active metabolie much more potent than mother compound<br>
+→ weakly inhibits reuptake of norepinephrine and serotonin <br>
+→ manage moderate to moderately severe pain<br>
+→ nalxone active<br>
+→ anaphylactic reactions<br>
+→ toxicity dd : - selective serotonin reuptake inhibitors, -tricyclic antidepressants, or overdose = excitation &amp; seizures, MAOIs
+</p>
+
+<h3>B.Tapetnadol</h3>
+
+<p>
+→ μ receptor <br>
+→ centrally acting ANALGESIC<br>
+→ norepinephrine reuptake inhibitors<br>
+→ manage moderate to severe chronic/acute pain<br>
+→ limited drug drug interaction<br>
+→ does not appear to inhibit CYP450 enzyme system , mainly metabolized: glucororodination<br>
+→ does not produce active metabolites<br>
+-&gt; MAOIs last 14 days not allowed<br>
+→ immediate-release formulation
+</p>
+
+<h2>ANTAGONIST</h2>
+
+<br>
+
+<p>
+<ul>
+<li>high affinity to opioid receptor // failed to activate the receptor mediated response</li>
+<li>no profound effects in naive patients</li>
+<li>rapidply reverse the effect of agonists</li>
+<li>percipiate withdrawl symptoms</li>
+</ul>
+</p>
+
+<h3>A.Naloxone</h3>
+
+<p>
+→ reverse coma and respiratory depression of opioid overdose<br>
+→ rapidly displace all opioid molecules<br>
+→ half life 30 to 81 min<br>
+→ competative antagonist at μ&gt;κ&gt;δ
+</p>
+
+<h3>B.Naltrexone</h3>
+
+<p>
+→ actions similar to nalxone<br>
+→ longer duration of action (single oral dose block the effect of injected heroin for up to 48hrs)<br>
+→ combined with <i>clonidine/buprenorphine (</i>rapid opiod detoxification)<br>
+→ treat chronic alcholism<br>
+→ hepatotoxicity 
+</p>
+
+<h1>NONSTEROIDAL ANTI-INFLAMMATORY</h1>
+
+<br>
+
+<h3>OVERVIEW</h3>
+
+<p>
+<ul>
+<li>antipyretic</li>
+<li>alagesic</li>
+<li>antinflamatory </li>
+<li>act primarily by inhibiting <b>cycloxygenase e<u>n</u>zymes</b></li>
+<li>decreased prostagladin synthesis has benificial &amp; uwanted effects</li>
+<li>Labeling: -potential risk of serious cardiovascular thrombotic events</li>
+</ul>
+<div style='padding-left: 150pt'>
+-myocardial infraction<br>
+ -stroke
+</div>
+<div style='padding-left: 30pt'>
+ GIT:          -bleeding
+</div>
+<div style='padding-left: 150pt'>
+  -ulceration,perforation
+</div>
+</p>
+
+<br>
+
+<h3>A. Aspirin and other salicylic acid derivatives</h3>
+
+<p>
+<ul>
+<li>most commonly used</li>
+</ul>
+</p>
+
+<p>
+<b>1.Mechanism of action:</b><br>
+→ weak organic acid <br>
+→ irreversibly acetylates cyclooxygenase<br>
+→ other salicylates are ALL reversible inhibitors of COX<br>
+→ Aspirin deacetylated by body's esterases = producing salicylate  -1-anti-inflammatory<br>
+<div style='padding-left: 480pt'>
+   	 -2-antipyretic 
+</div>
+<div style='padding-left: 570pt'>
+ -3-analgesic
+</div>
+→ -2- blockade of prostagladin synthesis at the thermoregulatory centers in the hypothalamus and peripheral target sites<br>
+<div style='padding-left: 60pt'>
+  -prevents the sensitization of pain receptors (chemical+mechanical stimuli) (subcortical sites)
+</div>
+<b>2.Actions:</b><br>
+<ol type="a" start="1">
+<li>anti-inflammatory</li>
+<li>analgesic</li>
+<li>antipyretic</li>
+</ol>
+</p>
+
+<p>
+<b>a.anti-inflammatory</b>
+</p>
+
+<p>
+<b>b.analgesic action</b>
+</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+	</div>
+
+	<br />
+
+	<div class='page-footer'>
+
+	</div>
+
+	
+
+</div>
+
+</body>
+</html>
